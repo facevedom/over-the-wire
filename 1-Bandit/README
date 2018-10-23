@@ -1,3 +1,4 @@
 Each level has a 'wrapper' script.
-The wrapper calls the 'connect' script, injecting the proper 'hack' script to
-the SSH connection
+The wrapper calls the 'connect' script, injecting the proper 'hack' script to the SSH connection.
+
+First password is 'bandit0'
