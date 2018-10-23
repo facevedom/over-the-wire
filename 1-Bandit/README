@@ -1,1 +1,3 @@
-The wrapper calls the connection script, injecting the proper hack script
+Each level has a 'wrapper' script.
+The wrapper calls the 'connect' script, injecting the proper 'hack' script to
+the SSH connection
