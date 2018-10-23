@@ -1,1 +1,6 @@
-run './hack_away.sh', enter the first password, and behold!
+1- Run './hack_away.sh'
+2- ???
+3- Profit
+
+Requirements:
+- sshpass
