@@ -1,4 +1,4 @@
 # change into home directory
 cd ~
 # read password file
-cat readme
+cat spaces\ in\ this\ filename
