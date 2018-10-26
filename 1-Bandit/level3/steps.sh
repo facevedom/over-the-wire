@@ -1,4 +1,2 @@
-# change into directory
-cd ~/inhere
-# find the only hidden file and read it
-cat $(ls -ap | grep -v /)
+cd ~/inhere           # change into directory
+cat $(echo .[^.]*)    # read the only hidden file
