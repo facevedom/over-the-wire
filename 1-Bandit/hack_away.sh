@@ -23,33 +23,37 @@ give_level_info 0
 export REMOTE_USER=bandit0
 export REMOTE_PASSWORD=bandit0
 export SCRIPT="level0/steps.sh"
-export LEVEL_1_PASS=$(./connect.sh)
+./connect.sh>tmp
+export LEVEL_1_PASSWORD=$(tail -n 1 tmp)
 echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
-echo -e "Password obtained for level 1: ${GREEN}$LEVEL_1_PASS${NOCOLOR}"
+echo -e "Password obtained for level 1:\n${GREEN}$LEVEL_1_PASSWORD${NOCOLOR}"
 
 # level 1
 give_level_info 1
 export REMOTE_USER=bandit1
-export REMOTE_PASSWORD=$LEVEL_1_PASS
+export REMOTE_PASSWORD=$LEVEL_1_PASSWORD
 export SCRIPT="level1/steps.sh"
-export LEVEL_2_PASS=$(./connect.sh)
+./connect.sh>tmp
+export LEVEL_2_PASSWORD=$(tail -n 1 tmp)
 echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
-echo -e "Password obtained for level 2: ${GREEN}$LEVEL_2_PASS${NOCOLOR}"
+echo -e "Password obtained for level 2:\n${GREEN}$LEVEL_2_PASSWORD${NOCOLOR}"
 
 # level 2
 give_level_info 2
 export REMOTE_USER=bandit2
-export REMOTE_PASSWORD=$LEVEL_2_PASS
+export REMOTE_PASSWORD=$LEVEL_2_PASSWORD
 export SCRIPT="level2/steps.sh"
-export LEVEL_3_PASS=$(./connect.sh)
+./connect.sh>tmp
+export LEVEL_3_PASSWORD=$(tail -n 1 tmp)
 echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
-echo -e "Password obtained for level 3: ${GREEN}$LEVEL_3_PASS${NOCOLOR}"
+echo -e "Password obtained for level 3:\n${GREEN}$LEVEL_3_PASSWORD${NOCOLOR}"
 
 # level 3
 give_level_info 3
 export REMOTE_USER=bandit3
-export REMOTE_PASSWORD=$LEVEL_3_PASS
+export REMOTE_PASSWORD=$LEVEL_3_PASSWORD
 export SCRIPT="level3/steps.sh"
-export LEVEL_4_PASS=$(./connect.sh)
+./connect.sh>tmp
+export LEVEL_4_PASSWORD=$(tail -n 1 tmp)
 echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
-echo -e "Password obtained for level 4: ${GREEN}$LEVEL_4_PASS${NOCOLOR}"
+echo -e "Password obtained for level 4:\n${GREEN}$LEVEL_4_PASSWORD${NOCOLOR}"
