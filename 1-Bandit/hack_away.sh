@@ -22,7 +22,7 @@ export REMOTE_PORT=2220
 export REMOTE_HOST=bandit.labs.overthewire.org
 export NEXT_LEVEL_PASSWORD=bandit0
 
-for i in {0..4}
+for i in {0..5}
 do
     give_level_info $i
     export REMOTE_USER="bandit$i"
@@ -32,5 +32,9 @@ do
     ./connect.sh>tmp
     export NEXT_LEVEL_PASSWORD=$(tail -n 1 tmp)
     echo -e "Password obtained for level `expr "$i" + "1"`: ${GREEN}$NEXT_LEVEL_PASSWORD${NOCOLOR}"
-    read -p "$(echo -e ${GRAY}press enter to continue${NOCOLOR})"
+    
+    if [[ "$@" == "-i" ]]
+    then
+        read -p "$(echo -e ${GRAY}press enter to continue${NOCOLOR})"
+    fi
 done
