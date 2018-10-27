@@ -1,4 +1,4 @@
-# Over the Wire
+# :smirk_cat: Over the Wire
 ## Wargames
 My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/)
 
