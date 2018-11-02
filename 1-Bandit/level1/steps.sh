@@ -1,2 +1,2 @@
-cd ~       # change into home directory
-cat ./-    # read password file
+cd ~                                                         # change into home directory
+cat ./-                                                      # read password file

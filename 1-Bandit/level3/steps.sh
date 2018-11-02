@@ -1,2 +1,2 @@
-cd ~/inhere           # change into directory
-cat $(echo .[^.]*)    # read the only hidden file
+cd ~/inhere                                                   # change into directory
+cat $(echo .[^.]*)                                            # read the only hidden file
