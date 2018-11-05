@@ -22,7 +22,7 @@ export REMOTE_PORT=2220
 export REMOTE_HOST=bandit.labs.overthewire.org
 export NEXT_LEVEL_PASSWORD=bandit0
 
-for i in {0..12}
+for i in {0..14}
 do
     give_level_info $i
     export REMOTE_USER="bandit$i"
