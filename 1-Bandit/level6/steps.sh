@@ -1,3 +1,4 @@
+#! /bin/bash
                                                              # owned by user bandit7 
                                                              # and owned by group bandit6
                                                              # and 33 bytes in size

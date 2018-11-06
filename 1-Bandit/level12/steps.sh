@@ -1,3 +1,4 @@
+#! /bin/bash
 cd ~
                                                         # make a random working directory
 FOLDERNAME="/tmp/$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13 ; echo '')"
