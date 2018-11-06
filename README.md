@@ -8,6 +8,6 @@ My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargame
 
 ## Usage
 ```bash
-cd 1-Bandit
-bash hack_away.sh
+docker buid -t facevedom/overthewire .
+docker run facevedom/overthewire
 ```
