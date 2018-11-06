@@ -1,23 +1,23 @@
-# :smirk_cat: Over the Wire
+# :smirk_cat: Over the Wire: Wargames
 [![Build Status](https://travis-ci.com/facevedom/over-the-wire.svg?branch=master)](https://travis-ci.com/facevedom/over-the-wire)
-## Wargames
+
 My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/).
 
 Run the script, or pull/build and run the Docker container.
 
-### Sample
+## Sample
 This is what output looks like
 
 ![sample output](sample.png)
 
-### Requirements
+## Requirements
 - When running the main script manually
   - Bash
   - Sshpass
 - When using  Docker
   - Docker  
 
-### Usage
+## Usage
 
 #### Manually :metal:
 ```
