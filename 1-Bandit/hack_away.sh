@@ -15,7 +15,7 @@ BLUE='\033[0;34m'
 GRAY='\033[0;33m'
 NOCOLOR='\033[0m'
 
-# setup
+# general setup
 clear
 export WARGAME="bandit"
 export REMOTE_PORT=2220
@@ -24,12 +24,25 @@ export NEXT_LEVEL_PASSWORD=bandit0
 
 for i in {0..14}
 do
-    give_level_info $i
+    # setup for current level
     export REMOTE_USER="bandit$i"
     export REMOTE_PASSWORD="$NEXT_LEVEL_PASSWORD"
     export SCRIPT="level$i/steps.sh"
+
+    # display pretty stuff
+    give_level_info $i
     echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
+    
+    # do the actual labor
     ./connect.sh>tmp
+    
+    # force error exit when remote script fails
+    if [[ $? != 0 ]]
+    then
+        echo "Panic now!"
+        exit 1
+    fi
+
     export NEXT_LEVEL_PASSWORD=$(tail -n 1 tmp)
     rm -f tmp
     echo -e "Password obtained for level `expr "$i" + "1"`: ${GREEN}$NEXT_LEVEL_PASSWORD${NOCOLOR}"
