@@ -3,7 +3,7 @@
 ## Wargames
 My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/).
 
-Run the script, or build and run the Docker container.
+Run the script, or pull/build and run the Docker container.
 
 ### Sample
 This is what output looks like
@@ -11,22 +11,36 @@ This is what output looks like
 ![sample output](sample.png)
 
 ### Requirements
-- When using  Docker
-  - Docker
 - When running the main script manually
   - Bash
   - Sshpass
+- When using  Docker
+  - Docker  
 
 ### Usage
-#### With Docker
-```bash
-docker build -t facevedom/over-the-wire .
-docker run facevedom/over-the-wire
-```
 
-#### Manually
+#### Manually :metal:
 ```
 cd 1-Bandit
 chmod +x *.sh
 ./hack_away.sh
+```
+
+
+#### With Docker :whale2:
+You have two alternatives:
+
+- Pulling public pre-built image
+```bash
+docker pull facevedom/over-the-wire
+```
+
+- Building from Dockerfile
+```bash
+docker build -t facevedom/over-the-wire .
+```
+
+Then, simply run the container
+```bash
+docker run facevedom/over-the-wire
 ```
