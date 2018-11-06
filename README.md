@@ -20,8 +20,8 @@ This is what output looks like
 ### Usage
 #### With Docker
 ```bash
-docker build -t facevedom/overthewire .
-docker run facevedom/overthewire
+docker build -t facevedom/over-the-wire .
+docker run facevedom/over-the-wire
 ```
 
 #### Manually
