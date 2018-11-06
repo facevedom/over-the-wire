@@ -1,3 +1,4 @@
+#! /bin/bash
 cd ~/inhere
                                                         # recursively find all 
                                                         # - non executable files

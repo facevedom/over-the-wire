@@ -1,3 +1,4 @@
+#! /bin/bash
 # notice this is one long command broken into several lines
                  # - get human-readable strings from file
                  # - grep those starting with at least two '=='
