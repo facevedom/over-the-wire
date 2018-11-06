@@ -1,9 +1,12 @@
 # :smirk_cat: Over the Wire
 ## Wargames
-My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/)
+My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/).
+
+Run the script, or run the Docker image.
 
 ### Sample
 This is what output looks like
+
 ![sample output](sample.png)
 
 ### Requirements
