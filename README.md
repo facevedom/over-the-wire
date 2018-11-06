@@ -2,7 +2,7 @@
 ## Wargames
 My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/).
 
-Run the script, or run the Docker image.
+Run the script, or build and run the Docker container.
 
 ### Sample
 This is what output looks like
@@ -10,16 +10,16 @@ This is what output looks like
 ![sample output](sample.png)
 
 ### Requirements
-#### Flavor 1: Docker
-- Docker
-#### Flavor 2: Manually
-- Bash
-- Sshpass
+- When using  Docker
+  - Docker
+- When running the main script manually
+  - Bash
+  - Sshpass
 
 ### Usage
-#### With Docker:
+#### With Docker
 ```bash
-docker buid -t facevedom/overthewire .
+docker build -t facevedom/overthewire .
 docker run facevedom/overthewire
 ```
 
