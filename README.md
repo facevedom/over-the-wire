@@ -1,4 +1,5 @@
 # :smirk_cat: Over the Wire
+[![Build Status](https://travis-ci.com/facevedom/over-the-wire.svg?branch=master)](https://travis-ci.com/facevedom/over-the-wire)
 ## Wargames
 My scripts to solve [Wargames from Over the Wire](http://overthewire.org/wargames/).
 
