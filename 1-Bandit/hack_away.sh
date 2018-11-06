@@ -31,6 +31,7 @@ do
     echo -e "${BLUE}$(cat $SCRIPT)${NOCOLOR}\n"
     ./connect.sh>tmp
     export NEXT_LEVEL_PASSWORD=$(tail -n 1 tmp)
+    rm -f tmp
     echo -e "Password obtained for level `expr "$i" + "1"`: ${GREEN}$NEXT_LEVEL_PASSWORD${NOCOLOR}"
     
     if [[ "$@" == "-i" ]]
